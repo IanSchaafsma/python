@@ -1,15 +1,12 @@
 import random
-while True:
-    print("typ 3x een woord")
+def original():
     original = input()
     randomised = ''.join(random.sample(original, len(original)))
     print(randomised)
 
-    original = input()
-    randomised = ''.join(random.sample(original, len(original)))
-    print(randomised)
+    return 3 * original
 
-    original = input()
-    randomised = ''.join(random.sample(original, len(original)))
-    print(randomised)
-    break 
+
+print(original())
+
+
