@@ -1,12 +1,12 @@
 import random
-def original():
-    original = input()
+def shuffle_word(original):
     randomised = ''.join(random.sample(original, len(original)))
     print(randomised)
 
-    return 3 * original
+    return original
 
 
-print(original())
-
+print(shuffle_word("hallo"))
+print(shuffle_word("goed"))
+print(shuffle_word("slecht"))
 
